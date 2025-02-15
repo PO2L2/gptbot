@@ -700,7 +700,6 @@ async def finalize_test_creation(user_id, topic, num_questions, difficulty, chat
         response = f"Ошибка при создании теста: {str(e)}"
     bot.send_message(chat_id, response)
     
-
 async def generate_test(topic: str, num_questions: int, difficulty: str, api_key: str, folder_id: str) -> Optional[list]:
     prompt = f"""
     Сгенерируй тест по теме "{topic}". 
